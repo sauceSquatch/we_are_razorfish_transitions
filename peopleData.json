@@ -1,0 +1,37 @@
+{
+  "config": {
+    "videoTime": 10
+  },
+  "people": [
+    {
+      "id": 0,
+      "name": "John Doe",
+      "title": "Sr. Interactive Specialist",
+      "video": "../videos/4388630.mp4"
+    },
+    {
+      "id": 1,
+      "name": "Tabitha Thecat",
+      "title": "Sr. Copywritter",
+      "video": "../videos/4388633.mp4"
+    },
+    {
+      "id": 2,
+      "name": "Harry Henderson",
+      "title": "Sr. Sasquatch",
+      "video": "../videos/4388666.mp4"
+    },
+    {
+      "id": 3,
+      "name": "Tall Man",
+      "title": "Creepster",
+      "video": "../videos/4690373.mp4"
+    },
+    {
+      "id": 4,
+      "name": "Parker Paul",
+      "title": "Associate Motion Director",
+      "video": "../videos/6221825.mp4"
+    }
+  ]
+}
