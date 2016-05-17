@@ -59,21 +59,31 @@ timerStart = function() {
 
 timerComplete = function() {
   console.log("activeVideo: ", activeVideo.get(0));
-  if(activeVideo.get(0) != undefined) activeVideo.get(0).pause();
+  // if(activeVideo.get(0) != undefined) activeVideo.get(0).pause();
 
   // transition out the videos
   if(person1.active == false) {
     activeVideo = $('.person-video', '#person2');
-    TweenLite.to($('#person1'), 0.75, {x:pageWidth * -1, ease:Power4.easeInOut});
-    TweenLite.to($('#person2'), 0.75, {x:0, ease:Power4.easeInOut, onComplete:advanceNextImage});
+    TweenLite.to($('.details', '#person1'), 0.75, {x:-360, ease:Power4.easeInOut});
+    TweenLite.to($('#person1'), 0.75, {x:pageWidth * -1, ease:Power4.easeInOut, delay:0.25});
+    TweenLite.to($('#person2'), 0.75, {x:0, ease:Power4.easeInOut, onComplete:advanceNextImage, delay:0.25});
     person1.active = true;
     person2.active = false;
+    // animate the details on
+    TweenLite.to($('.details', '#person2'), 0.55, {width:350, ease:Power4.easeOut, delay:0.75});
+    TweenLite.to($('.details h1', '#person2'), 0.75, {alpha:1, delay:0.85});
+    TweenLite.to($('.details h2', '#person2'), 1, {alpha:1, delay:1.1});
   } else {
     activeVideo = $('.person-video', '#person1');
-    TweenLite.to($('#person2'), 0.75, {x:pageWidth * -1, ease:Power4.easeInOut});
-    TweenLite.to($('#person1'), 0.75, {x:0, ease:Power4.easeInOut, onComplete:advanceNextImage});
+    TweenLite.to($('.details', '#person2'), 0.75, {x:-360, ease:Power4.easeInOut});
+    TweenLite.to($('#person2'), 0.75, {x:pageWidth * -1, ease:Power4.easeInOut, delay:0.25});
+    TweenLite.to($('#person1'), 0.75, {x:0, ease:Power4.easeInOut, onComplete:advanceNextImage, delay:0.25});
     person1.active = false;
     person2.active = true;
+    // animate the details on
+    TweenLite.to($('.details', '#person1'), 0.55, {width:350, ease:Power4.easeOut, delay:0.75});
+    TweenLite.to($('.details h1', '#person1'), 0.75, {alpha:1, delay:0.85});
+    TweenLite.to($('.details h2', '#person1'), 1, {alpha:1, delay:1.1});
   }
 
   if(activeVideo.get(0) != undefined) activeVideo.get(0).play();
@@ -91,11 +101,17 @@ advanceNextImage = function() {
   // figure out what one is inactive and then update data
   if(person1.active == false) {
     TweenLite.set($('#person2'), {x:pageWidth});
+    TweenLite.set($('.details h1', '#person2'), {alpha:0});
+    TweenLite.set($('.details h2', '#person2'), {alpha:0});
+    TweenLite.set($('.details', '#person2'), {width:pageWidth, x:0});
     $('.details h1', '#person2').text(people[nextNum].name);
     $('.details h2', '#person2').text(people[nextNum].title);
     $('.person-video', '#person2').attr( "src", people[nextNum].video);
   } else {
     TweenLite.set($('#person1'), {x:pageWidth});
+    TweenLite.set($('.details h1', '#person1'), {alpha:0});
+    TweenLite.set($('.details h2', '#person1'), {alpha:0});
+    TweenLite.set($('.details', '#person1'), {width:pageWidth, x:0});
     $('.details h1', '#person1').text(people[nextNum].name);
     $('.details h2', '#person1').text(people[nextNum].title);
     $('.person-video', '#person1').attr( "src", people[nextNum].video);
