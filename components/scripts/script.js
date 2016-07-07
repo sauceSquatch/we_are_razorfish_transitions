@@ -19,7 +19,7 @@ init = function() {
 }
 
 var currentNum = 0,
-    timeForEachPerson = 5,
+    timeForEachPerson = 13,
     nextNum = 1,
     people = [],
     person1 = $('#person1'),
