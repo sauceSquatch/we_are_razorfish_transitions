@@ -5,44 +5,44 @@
   "people": [
     {
       "id": 0,
-      "name": "Chloe",
-      "title": "Sr. Interactive Specialist",
+      "name": "Chloe Canon",
+      "title": "Technology Intern",
       "video": "../videos/Chloe.mp4"
     },
     {
       "id": 1,
-      "name": "Chris",
-      "title": "Sr. Copywritter",
+      "name": "Chris Luedtke",
+      "title": "User Experience Intern",
       "video": "../videos/Chris.mp4"
     },
     {
       "id": 2,
-      "name": "Krista",
-      "title": "Sr. Sasquatch",
+      "name": "Krista Spindler",
+      "title": "Project Coordinator Intern",
       "video": "../videos/Krista.mp4"
     },
     {
       "id": 3,
-      "name": "Lauren",
-      "title": "Associate Taco Theif",
+      "name": "Lauren Zugai",
+      "title": "Technology Intern",
       "video": "../videos/Lauren.mp4"
     },
     {
       "id": 4,
-      "name": "Logan",
-      "title": "Associate Motion Director",
+      "name": "Logan Fry",
+      "title": "User Experience Intern",
       "video": "../videos/Logan.mp4"
     },
     {
       "id": 5,
-      "name": "Sophie",
-      "title": "Associate Motion Director",
+      "name": "Sophie Kollaja",
+      "title": "Associate Copywriter Intern",
       "video": "../videos/Sophie.mp4"
     },
     {
       "id": 6,
-      "name": "Neta",
-      "title": "Associate Motion Director",
+      "name": "Neta Bomani",
+      "title": "Motion Intern",
       "video": "../videos/Neta.mp4"
     }
   ]
