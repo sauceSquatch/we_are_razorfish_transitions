@@ -5,33 +5,45 @@
   "people": [
     {
       "id": 0,
-      "name": "John Doe",
+      "name": "Chloe",
       "title": "Sr. Interactive Specialist",
-      "video": "../videos/4388630.mp4"
+      "video": "../videos/Chloe.mp4"
     },
     {
       "id": 1,
-      "name": "Tabitha Thecat",
+      "name": "Chris",
       "title": "Sr. Copywritter",
-      "video": "../videos/4388633.mp4"
+      "video": "../videos/Chris.mp4"
     },
     {
       "id": 2,
-      "name": "Harry Henderson",
+      "name": "Krista",
       "title": "Sr. Sasquatch",
-      "video": "../videos/4388666.mp4"
+      "video": "../videos/Krista.mp4"
     },
     {
       "id": 3,
-      "name": "Tall Man",
-      "title": "Creepster",
-      "video": "../videos/4690373.mp4"
+      "name": "Lauren",
+      "title": "Associate Taco Theif",
+      "video": "../videos/Lauren.mp4"
     },
     {
       "id": 4,
-      "name": "Parker Paul",
+      "name": "Logan",
       "title": "Associate Motion Director",
-      "video": "../videos/6221825.mp4"
+      "video": "../videos/Logan.mp4"
+    },
+    {
+      "id": 5,
+      "name": "Sophie",
+      "title": "Associate Motion Director",
+      "video": "../videos/Sophie.mp4"
+    },
+    {
+      "id": 6,
+      "name": "Neta",
+      "title": "Associate Motion Director",
+      "video": "../videos/Neta.mp4"
     }
   ]
 }
