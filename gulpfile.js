@@ -1,11 +1,14 @@
 var gulp = require('gulp'),
     gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
+    coffee = require('gulp-coffee'),
+    connect = require('gulp-connect'),
     uglify = require('gulp-uglify'),
-    sass = require('gulp-ruby-sass'),
-    concat = require('gulp-concat'),
-    livereload = require('gulp-livereload'),
-    lr = require('tiny-lr'),
-    server = lr();
+    concat = require('gulp-concat');
+
+var coffeeSources = ['scripts/hello.coffee'],
+    htmlSources = ['**/*.html'],
+    outputDir = 'assets';
 
 var sassSources = [
   'components/sass/*.sass',
@@ -14,36 +17,62 @@ var sassSources = [
 
 var jsSources = [
   'components/lib/*.js',
-  'components/lib/greensock/TweenMax.js',
+  'components/lib/greensock/TweenLite.js',
   'components/lib/greensock/easing/EasePack.js',
   'components/lib/greensock/plugins/CSSPlugin.js',
-  'components/lib/greensock/plugins/DrawSVGPlugin.js',
   'components/scripts/*.js'
 ];
 
-gulp.task('run_sass', function() {
-  gulp.src(sassSources)
-    .pipe(sass({style: 'expanded', lineNumbers:true})
-      .on('error', gutil.log))
-    .pipe(concat('style.css'))
-    .pipe(gulp.dest('css'))
-    .pipe(livereload());
-})
 
-gulp.task('run_js', function() {
+gulp.task('log', function() {
+  gutil.log('== My First Task ==')
+});
+
+gulp.task('copy', function() {
+  gulp.src('index.html')
+  .pipe(gulp.dest(outputDir))
+});
+
+gulp.task('sass', function() {
+  gulp.src(sassSources)
+  .pipe(sass({style: 'expanded'}))
+    .on('error', gutil.log)
+  .pipe(gulp.dest('css'))
+  .pipe(connect.reload())
+});
+
+gulp.task('coffee', function() {
+  gulp.src(coffeeSources)
+  .pipe(coffee({bare: true})
+    .on('error', gutil.log))
+  .pipe(gulp.dest('scripts'))
+});
+
+gulp.task('js', function() {
   gulp.src(jsSources)
-          // .pipe(uglify())
-          .pipe(concat('script.js'))
-          .pipe(gulp.dest('js'))
+  .pipe(uglify())
+  .pipe(concat('script.js'))
+  .pipe(gulp.dest("js"))
+  .pipe(connect.reload())
 });
 
 gulp.task('watch', function() {
-  var server = livereload();
-  gulp.watch(sassSources, ['run_sass']);
-  gulp.watch(jsSources, ['run_js']);
-  gulp.watch(['js/script.js', 'css/style.css', '*.html'], function(e) {
-    server.changed(e.path);
-  })
-})
+  gulp.watch(coffeeSources, ['coffee']);
+  gulp.watch(jsSources, ['js']);
+  gulp.watch(sassSources, ['sass']);
+  gulp.watch(htmlSources, ['html']);
+});
 
-gulp.task('default', ['run_sass', 'run_js', 'watch']);
+gulp.task('connect', function() {
+  connect.server({
+    root: '.',
+    livereload: true
+  })
+});
+
+gulp.task('html', function() {
+  gulp.src(htmlSources)
+  .pipe(connect.reload())
+});
+
+gulp.task('default', ['html', 'coffee', 'js', 'sass', 'connect', 'watch']);

@@ -5,42 +5,102 @@
   "people": [
     {
       "id": 0,
-      "name": "Chloe Canon",
+      "name": "Ailly Sellers",
       "title": "Technology Intern",
-      "video": "../videos/Chloe.mp4"
+      "video": "../videos/1004-AillySellers.mp4"
     },
     {
       "id": 1,
+      "name": "Akbar Bhaidani",
+      "title": "Technology Intern",
+      "video": "../videos/1005-AkbarBhaidani.mp4"
+    },
+    {
+      "id": 2,
+      "name": "Alexa Avila",
+      "title": "Technology Intern",
+      "video": "../videos/1006-AlexaAvila.mp4"
+    },
+    {
+      "id": 3,
+      "name": "Alison Steele",
+      "title": "Technology Intern",
+      "video": "../videos/1007-AlisonSteele.mp4"
+    },
+    {
+      "id": 4,
+      "name": "Amanda Fonseca",
+      "title": "Technology Intern",
+      "video": "../videos/1008-AmandaFonseca.mp4"
+    },
+    {
+      "id": 5,
+      "name": "Amy Ditterline",
+      "title": "Technology Intern",
+      "video": "../videos/1009-AmyDitterline.mp4"
+    },
+    {
+      "id": 6,
+      "name": "Andrew Rutkowski",
+      "title": "Technology Intern",
+      "video": "../videos/1010-AndrewRutkowski.mp4"
+    },
+    {
+      "id": 7,
+      "name": "Anjana Patel",
+      "title": "Technology Intern",
+      "video": "../videos/1011-AnjanaPatel.mp4"
+    },
+    {
+      "id": 8,
+      "name": "Annie Carroll",
+      "title": "Technology Intern",
+      "video": "../videos/1012-AnnieCarroll.mp4"
+    },
+    {
+      "id": 9,
+      "name": "Anthony Skinner",
+      "title": "Technology Intern",
+      "video": "../videos/1013-AnthonySkinner.mp4"
+    },
+    {
+      "id": 10,
+      "name": "Arlene Tee",
+      "title": "Technology Intern",
+      "video": "../videos/1014-ArleneTee.mp4"
+    },
+    {
+      "id": 11,
       "name": "Chris Luedtke",
       "title": "User Experience Intern",
       "video": "../videos/Chris.mp4"
     },
     {
-      "id": 2,
+      "id": 12,
       "name": "Krista Spindler",
       "title": "Project Coordinator Intern",
       "video": "../videos/Krista.mp4"
     },
     {
-      "id": 3,
+      "id": 13,
       "name": "Lauren Zugai",
       "title": "Technology Intern",
       "video": "../videos/Lauren.mp4"
     },
     {
-      "id": 4,
+      "id": 14,
       "name": "Logan Fry",
       "title": "User Experience Intern",
       "video": "../videos/Logan.mp4"
     },
     {
-      "id": 5,
+      "id": 15,
       "name": "Sophie Kollaja",
       "title": "Associate Copywriter Intern",
       "video": "../videos/Sophie.mp4"
     },
     {
-      "id": 6,
+      "id": 16,
       "name": "Neta Bomani",
       "title": "Motion Intern",
       "video": "../videos/Neta.mp4"
