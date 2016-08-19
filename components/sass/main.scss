@@ -47,12 +47,12 @@ body {
       position: absolute;
       .details {
         position: absolute;
-        top: 50%;
+        top: 60%;
         left: 0;
         width: 350px;
         height: 85px;
         text-align: right;
-        background-color: #5f5f5f;
+        // background-color: #5f5f5f;
         font-size: 16px;
         h1 {
           font-size: 36px;
@@ -70,6 +70,40 @@ body {
           padding-left: 96px;
           text-align:left;
           width: 600px;
+        }
+
+        .circle {
+          position: absolute;
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+        }
+
+        #circ1 {
+          opacity: 0.25;
+          background-color: #22f2ff;
+          width: 500px;
+          height: 500px;
+          left:-100px;
+          top: -50px;
+        }
+        #circ2 {
+          opacity: 0.25;
+          background-color: #ffe933;
+          width: 820px;
+          height: 820px;
+        }
+        #circ3 {
+          opacity: 0.35;
+          background-color: #74df33;
+          width: 720px;
+          height: 720px;
+        }
+        #circ4 {
+          opacity: 0.38;
+          background-color: #acb918;
+          width: 800px;
+          height: 800px;
         }
       }
     }

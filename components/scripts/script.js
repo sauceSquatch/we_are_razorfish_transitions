@@ -12,14 +12,15 @@ $(document).ready(function()
 
 ///// INIT vars
 init = function() {
-  imageCount = $("div.image_group").length;
+  // imageCount = $("div.image_group").length;
   i = 1;
   $.getJSON( "../peopleData.json", onLoadedJSON);
   setWidth();
 }
 
 var currentNum = 0,
-    timeForEachPerson = 13,
+    timeForEachPerson = 4,
+    firstRun = true,
     nextNum = 1,
     people = [],
     person1 = $('#person1'),
@@ -40,8 +41,8 @@ setWidth = function() {
 $(window).resize(setWidth);
 
 onLoadedJSON = function( data ) {
-  console.log("DATA SUCCESS");
-  console.log("data: ", data.people);
+  // console.log("DATA SUCCESS");
+  // console.log("data: ", data.people);
   people = $.each( data.people, function( key, val ) {
   
   });
@@ -57,7 +58,12 @@ reset = function() {
 
 timerStart = function() {
   TweenLite.to("#loader_path", 0, {drawSVG:"100%"});
-  TweenLite.from("#loader_path", timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+  if(firstRun) {
+    TweenLite.from("#loader_path", 0.25, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+    firstRun = false;
+  } else {
+    TweenLite.from("#loader_path", timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+  }
 }
 
 function getRandom(min, max) {
@@ -79,7 +85,7 @@ timerComplete = function() {
     person1.active = true;
     person2.active = false;
     // animate the details on
-    TweenLite.set($('.details', '#person2'), {backgroundColor:newColor});
+    // TweenLite.set($('.details', '#person2'), {backgroundColor:newColor});
     TweenLite.to($('.details', '#person2'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
@@ -93,7 +99,7 @@ timerComplete = function() {
     person1.active = false;
     person2.active = true;
     // animate the details on
-    TweenLite.set($('.details', '#person1'), {backgroundColor:newColor});
+    // TweenLite.set($('.details', '#person1'), {backgroundColor:newColor});
     TweenLite.to($('.details', '#person1'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
