@@ -50,7 +50,7 @@ gulp.task('coffee', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
-  .pipe(uglify())
+  // .pipe(uglify())
   .pipe(concat('script.js'))
   .pipe(gulp.dest("js"))
   .pipe(connect.reload())

@@ -70,19 +70,20 @@ table {
   background-repeat: no-repeat; }
 
 body {
-  font-family: "Oxygen", sans-serif;
+  font-family: "Rockwell", "Oxygen", sans-serif;
+  src: url(../fonts/Rockwell.ttf);
   background-color: #333333;
   margin: 0px; }
   body #hero_image_scroller {
     position: relative;
     margin: 0 auto;
-    background-color: #000;
     width: 100%; }
     body #hero_image_scroller #loader_holder {
       position: absolute;
       z-index: 777;
       right: 80px;
-      top: 60px; }
+      top: 60px;
+      opacity: 0; }
       body #hero_image_scroller #loader_holder #loader {
         position: absolute;
         opacity: 0; }
@@ -95,7 +96,7 @@ body {
       position: absolute; }
       body #peopleHolder .person .details {
         position: absolute;
-        top: 60%;
+        top: 68%;
         left: 0;
         width: 350px;
         height: 85px;
@@ -108,14 +109,16 @@ body {
           width: 100%;
           padding-left: 96px;
           text-align: left;
-          width: 600px; }
+          width: 600px;
+          z-index: 333; }
         body #peopleHolder .person .details h2 {
           font-size: 14px;
           margin: 10px 0px 0 0;
           color: #f5f5f5;
           padding-left: 96px;
           text-align: left;
-          width: 600px; }
+          width: 600px;
+          z-index: 334; }
         body #peopleHolder .person .details .circle {
           position: absolute;
           border-radius: 50%;
@@ -124,25 +127,31 @@ body {
         body #peopleHolder .person .details #circ1 {
           opacity: 0.25;
           background-color: #22f2ff;
-          width: 500px;
-          height: 500px;
-          left: -100px;
-          top: -50px; }
+          width: 1300px;
+          height: 1300px;
+          left: -600px;
+          top: -30px; }
         body #peopleHolder .person .details #circ2 {
           opacity: 0.25;
           background-color: #ffe933;
-          width: 820px;
-          height: 820px; }
+          width: 1300px;
+          height: 1300px;
+          left: -290px;
+          top: 60px; }
         body #peopleHolder .person .details #circ3 {
           opacity: 0.35;
           background-color: #74df33;
-          width: 720px;
-          height: 720px; }
+          width: 920px;
+          height: 920px;
+          left: -300px;
+          top: 80px; }
         body #peopleHolder .person .details #circ4 {
           opacity: 0.38;
           background-color: #acb918;
-          width: 800px;
-          height: 800px; }
+          width: 550px;
+          height: 550px;
+          left: 0px;
+          top: 90px; }
     body #peopleHolder .person-video {
       min-width: 100%; }
     body #peopleHolder #person1 {
@@ -152,15 +161,47 @@ body {
   body footer {
     position: absolute;
     z-index: 666;
-    bottom: 0px;
+    top: 50px;
     left: 0px;
     min-width: 100%;
-    height: 160px;
-    background-color: #372622; }
+    height: 160px; }
+    body footer .circles {
+      position: absolute;
+      right: 50px; }
+      body footer .circles .circle {
+        position: absolute;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        background-color: #a0b60b; }
+      body footer .circles #circ1 {
+        opacity: 0.22;
+        width: 555px;
+        height: 555px;
+        left: -320px;
+        top: -330px; }
+      body footer .circles #circ2 {
+        opacity: 0.45;
+        width: 333px;
+        height: 333px;
+        left: -150px;
+        top: -160px; }
+      body footer .circles #circ3 {
+        opacity: 0.35;
+        width: 220px;
+        height: 220px;
+        left: -230px;
+        top: -170px; }
+      body footer .circles #circ4 {
+        opacity: 0.95;
+        width: 220px;
+        height: 220px;
+        left: -80px;
+        top: -150px; }
   body .logo {
     position: absolute;
     right: 0px;
-    top: 20px;
+    top: -20px;
     width: 220px; }
 
 .top {

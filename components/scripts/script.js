@@ -57,12 +57,13 @@ reset = function() {
 }
 
 timerStart = function() {
-  TweenLite.to("#loader_path", 0, {drawSVG:"100%"});
+  TweenLite.to($("#loader_path"), 0, {drawSVG:"100%"});
+  // console.log($("#loader_path"))
   if(firstRun) {
-    TweenLite.from("#loader_path", 0.25, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+    TweenLite.from($("#loader_path"), 0.25, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
     firstRun = false;
   } else {
-    TweenLite.from("#loader_path", timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+    TweenLite.from($("#loader_path"), timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
   }
 }
 
@@ -89,6 +90,11 @@ timerComplete = function() {
     TweenLite.to($('.details', '#person2'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
+
+    TweenLite.from($('.details #circ1', '#person2'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ2', '#person2'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ3', '#person2'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ4', '#person2'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
   } else {
     activeVideo = $('.person-video', '#person1');
     TweenLite.to($('.details', '#person2'), 0.75, {x:-360, ease:Power4.easeInOut});
@@ -103,9 +109,14 @@ timerComplete = function() {
     TweenLite.to($('.details', '#person1'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
+
+    TweenLite.from($('.details #circ1', '#person1'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ2', '#person1'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ3', '#person1'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
+    TweenLite.from($('.details #circ4', '#person1'), 0.85, {width:1, height:1, x:1600, y:200, ease:Power4.easeOut, delay:0.55});
   }
 
-  TweenLite.to($('footer'), 0.95, {backgroundColor:newColor, delay:0.5});
+  // TweenLite.to($('footer'), 0.95, {backgroundColor:newColor, delay:0.5});
 
   if(activeVideo.get(0) != undefined) activeVideo.get(0).play();
 }
@@ -124,7 +135,7 @@ advanceNextImage = function() {
     TweenLite.set($('#person2'), {x:pageWidth});
     TweenLite.set($('.details h1', '#person2'), {alpha:0, marginLeft:80});
     TweenLite.set($('.details h2', '#person2'), {alpha:0, marginLeft:60});
-    TweenLite.set($('.details', '#person2'), {width:pageWidth, backgroundColor:'#000000', x:0});
+    TweenLite.set($('.details', '#person2'), {width:pageWidth, x:0});
     $('.details h1', '#person2').text(people[nextNum].name);
     $('.details h2', '#person2').text(people[nextNum].title);
     $('.person-video', '#person2').attr( "src", people[nextNum].video);
@@ -132,7 +143,7 @@ advanceNextImage = function() {
     TweenLite.set($('#person1'), {x:pageWidth});
     TweenLite.set($('.details h1', '#person1'), {alpha:0, marginLeft:80});
     TweenLite.set($('.details h2', '#person1'), {alpha:0, marginLeft:60});
-    TweenLite.set($('.details', '#person1'), {width:pageWidth, backgroundColor:'#000000', x:0});
+    TweenLite.set($('.details', '#person1'), {width:pageWidth, x:0});
     $('.details h1', '#person1').text(people[nextNum].name);
     $('.details h2', '#person1').text(people[nextNum].title);
     $('.person-video', '#person1').attr( "src", people[nextNum].video);
