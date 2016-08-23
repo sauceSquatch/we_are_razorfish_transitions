@@ -19,6 +19,7 @@ init = function() {
 }
 
 var currentNum = 0,
+    firstRun = true,
     timeForEachPerson = 13,
     nextNum = 1,
     people = [],
@@ -56,8 +57,14 @@ reset = function() {
 }
 
 timerStart = function() {
-  TweenLite.to("#loader_path", 0, {drawSVG:"100%"});
-  TweenLite.from("#loader_path", timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+  TweenLite.to($("#loader_path"), 0, {drawSVG:"100%"});
+  // console.log($("#loader_path"))
+  if(firstRun) {
+    TweenLite.from($("#loader_path"), 0.01, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+    firstRun = false;
+  } else {
+    TweenLite.from($("#loader_path"), timeForEachPerson, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
+  }
 }
 
 function getRandom(min, max) {
