@@ -58,7 +58,8 @@ reset = function() {
 
 timerStart = function() {
   TweenLite.to($("#loader_path"), 0, {drawSVG:"100%"});
-  // console.log($("#loader_path"))
+
+  console.log($("#loader_path"))
   if(firstRun) {
     TweenLite.from($("#loader_path"), 0.01, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
     firstRun = false;
@@ -72,8 +73,6 @@ function getRandom(min, max) {
 }
 
 timerComplete = function() {
-  // console.log("activeVideo: ", activeVideo.get(0));
-  // if(activeVideo.get(0) != undefined) activeVideo.get(0).pause();
   newColor = colors[getRandom(0, colors.length)];
   // transition out the videos
   if(person1.active == false) {
