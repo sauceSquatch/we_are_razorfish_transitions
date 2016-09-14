@@ -20,7 +20,7 @@ init = function() {
 
 var currentNum = 0,
     firstRun = true,
-    timeForEachPerson = 3,
+    timeForEachPerson = 5,
     nextNum = 1,
     people = [],
     person1 = $('#person1'),
@@ -144,7 +144,7 @@ advanceNextImage = function() {
     // nextNum = 0; instead of resetting to zero, re-grab data and re-shuffle
     nextNum = 0;
     // reshuffle
-    // people = shuffle(people);
+    people = shuffle(people);
     // init();
 
   } else {
