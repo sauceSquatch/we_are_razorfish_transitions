@@ -144,7 +144,7 @@ advanceNextImage = function() {
     // nextNum = 0; instead of resetting to zero, re-grab data and re-shuffle
     nextNum = 0;
     // reshuffle
-    people = shuffle(people);
+    // people = shuffle(people);
     // init();
 
   } else {
