@@ -70,7 +70,8 @@ table {
   background-repeat: no-repeat; }
 
 body {
-  font-family: RF_font;
+  font-family: "Rockwell", "Oxygen", sans-serif;
+  src: url(../fonts/rockwell.ttf);
   background-color: #333333;
   margin: 0px; }
   body #hero_image_scroller {
@@ -106,18 +107,22 @@ body {
         body #peopleHolder .person .details h1 {
           font-size: 36px;
           margin: 10px 0px 0 0;
+          text-transform: capitalize;
           color: #FFF;
           width: 100%;
           padding-left: 96px;
           text-align: left;
-          width: 600px; }
+          width: 600px;
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
         body #peopleHolder .person .details h2 {
           font-size: 24px;
           margin: 10px 0px 0 0;
           color: #f5f5f5;
+          text-transform: capitalize;
           padding-left: 96px;
           text-align: left;
-          width: 600px; }
+          width: 600px;
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
     body #peopleHolder .person-video {
       min-width: 100%; }
     body #peopleHolder #person1 {

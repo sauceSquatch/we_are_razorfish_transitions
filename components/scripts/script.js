@@ -20,7 +20,7 @@ init = function() {
 
 var currentNum = 0,
     firstRun = true,
-    timeForEachPerson = 12,
+    timeForEachPerson = 3,
     nextNum = 1,
     people = [],
     person1 = $('#person1'),
@@ -28,7 +28,7 @@ var currentNum = 0,
     activeperson,
     activeVideo = $('.person-video', '#person1'),
     pageWidth = $(window).width(),
-    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5'],
+    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
     newColor = '',
     currentColor = '';
 
@@ -94,6 +94,10 @@ function getRandom(min, max) {
 
 timerComplete = function() {
   newColor = colors[getRandom(0, colors.length)];
+  while(newColor == currentColor) {
+    newColor = colors[getRandom(0, colors.length)];
+  }
+  currentColor = newColor;
   // transition out the videos
   if(person1.active == false) {
     activeVideo = $('.person-video', '#person2');
