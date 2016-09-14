@@ -20,7 +20,7 @@ init = function() {
 
 var currentNum = 0,
     firstRun = true,
-    timeForEachPerson = 13,
+    timeForEachPerson = 3,
     nextNum = 1,
     people = [],
     person1 = $('#person1'),
@@ -28,25 +28,45 @@ var currentNum = 0,
     activeperson,
     activeVideo = $('.person-video', '#person1'),
     pageWidth = $(window).width(),
-    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5'],
-    newColor = '';
-    
+    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
+    newColor = '',
+    currentColor = '';
+
+shuffle = function(array) {
+  // console.log('SHUFFLE');
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
 
 setWidth = function() {
   pageWidth = $(window).width();
-  console.log("pageWidth: ", pageWidth);
 
   TweenLite.set($('.person'), {width:pageWidth});
 }
 $(window).resize(setWidth);
 
 onLoadedJSON = function( data ) {
-  console.log("DATA SUCCESS");
-  console.log("data: ", data.people);
+  // console.log("DATA SUCCESS");
   people = $.each( data.people, function( key, val ) {
   
   });
 
+  people = shuffle(people);
+  // console.log(people)
   advanceNextImage();
   
 }
@@ -58,6 +78,7 @@ reset = function() {
 
 timerStart = function() {
   TweenLite.to($("#loader_path"), 0, {drawSVG:"100%"});
+
   // console.log($("#loader_path"))
   if(firstRun) {
     TweenLite.from($("#loader_path"), 0.01, {drawSVG:"0%", delay:0.5, onComplete:timerComplete});
@@ -72,9 +93,11 @@ function getRandom(min, max) {
 }
 
 timerComplete = function() {
-  // console.log("activeVideo: ", activeVideo.get(0));
-  // if(activeVideo.get(0) != undefined) activeVideo.get(0).pause();
   newColor = colors[getRandom(0, colors.length)];
+  while(newColor == currentColor) {
+    newColor = colors[getRandom(0, colors.length)];
+  }
+  currentColor = newColor;
   // transition out the videos
   if(person1.active == false) {
     activeVideo = $('.person-video', '#person2');
@@ -113,9 +136,17 @@ timerComplete = function() {
 
 advanceNextImage = function() {
   currentNum = nextNum;
+  // console.log("nextNum: ", nextNum);
+  // console.log("people.length: ", people.length);
+  // console.log("currentNum: ", currentNum);
 
   if(nextNum >= people.length - 1) {
+    // nextNum = 0; instead of resetting to zero, re-grab data and re-shuffle
     nextNum = 0;
+    // reshuffle
+    // people = shuffle(people);
+    // init();
+
   } else {
     nextNum++;
   }
