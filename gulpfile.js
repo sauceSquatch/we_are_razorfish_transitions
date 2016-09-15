@@ -4,7 +4,8 @@ var gulp = require('gulp'),
     coffee = require('gulp-coffee'),
     connect = require('gulp-connect'),
     uglify = require('gulp-uglify'),
-    concat = require('gulp-concat');
+    concat = require('gulp-concat'),
+    browserSync = require('browser-sync').create();
 
 var coffeeSources = ['scripts/hello.coffee'],
     htmlSources = ['**/*.html'],
@@ -76,4 +77,12 @@ gulp.task('html', function() {
   .pipe(connect.reload())
 });
 
-gulp.task('default', ['html', 'coffee', 'js', 'sass', 'connect', 'watch']);
+gulp.task('browser-sync', function() {
+   browserSync.init({
+      proxy: {
+        target: "http://localhost:3333"
+      }
+    });
+});
+
+gulp.task('default', ['html', 'coffee', 'js', 'sass', 'connect', 'watch', 'browser-sync']);

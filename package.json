@@ -1,6 +1,7 @@
 {
   "name": "WeAreRazorfish",
   "version": "0.1.0",
+  "license": "MIT",
   "description": "boilerplate project for quick setup",
   "author": "Jamie Naioti",
   "devDependencies": {
@@ -10,7 +11,8 @@
     "gulp-coffee": "latest",
     "gulp-uglify": "latest",
     "gulp-concat": "latest",
-    "gulp-connect": "latest"
+    "gulp-connect": "latest",
+    "browser-sync": "latest"
   },
   "repository": {
     "type": "git",
