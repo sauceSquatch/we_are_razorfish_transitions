@@ -15,17 +15,6 @@
          "video":"../videos/1105-JamieNaioti.mp4"
       },
       {  
-         "id":2,
-         "name":"Alexa Avila",
-         "title":"Sr. Designer",
-         "homeTown":"Wichita, KS",
-         "favMovie":"The Sandlot",
-         "birthday":"June 25",
-         "favTeam":"Kansas Jayhawks – Basketball",
-         "superpower":"Flight",
-         "video":"../videos/1006-AlexaAvila.mp4"
-      },
-      {  
          "id":3,
          "name":"Amanda Fonseca",
          "title":"Project Coordinator",
@@ -123,17 +112,6 @@
          "favTeam":"Dallas Cowboys",
          "superpower":"Invisibility",
          "video":"../videos/1013-AnthonySkinner.mp4"
-      },
-      {  
-         "id":12,
-         "name":"Ashley Halligan",
-         "title":"Copywriter",
-         "homeTown":"Marietta, Ohio",
-         "favMovie":"Invisible Circus",
-         "birthday":"28",
-         "favTeam":"World Cup",
-         "superpower":"Flight",
-         "video":"../videos/1015-AshleyHalligan.mp4"
       },
       {  
          "id":13,
@@ -270,7 +248,7 @@
       {  
          "id":25,
          "name":"David Jameson",
-         "title":"Designer",
+         "title":"Sr. Designer",
          "homeTown":"Austin",
          "favMovie":"Birdman",
          "birthday":"March 26",
@@ -433,17 +411,6 @@
          "video":"../videos/1059-RachelBarber.mp4"
       },
       {  
-         "id":40,
-         "name":"Rusty Kocian",
-         "title":"Sr. Experience Designer",
-         "homeTown":"Austin, TX",
-         "favMovie":"The Brothers Bloom",
-         "birthday":"May 8th",
-         "favTeam":"Gryffindor",
-         "superpower":"Invisibility",
-         "video":"../videos/1065-RustyKocian.mp4"
-      },
-      {  
          "id":41,
          "name":"Russell Austin",
          "title":"Sr. Art Director",
@@ -477,17 +444,6 @@
          "video":"../videos/1085-WesBreyfogle.mp4"
       },
       {  
-         "id":44,
-         "name":"Zoha Shafiq",
-         "title":"Visual Designer",
-         "homeTown":"Austin",
-         "favMovie":"Hot Rod",
-         "birthday":"06/10/1992",
-         "favTeam":"The New York Sportballs",
-         "superpower":"Flight",
-         "video":"../videos/1087-ZohaShafiq.mp4"
-      },
-      {  
          "id":45,
          "name":"Susan Lindley",
          "title":"Project Manager",
@@ -519,28 +475,6 @@
          "favTeam":"Not Applicable",
          "superpower":"Invisibility",
          "video":"../videos/1133-LutherHimesIV.mp4"
-      },
-      {  
-         "id":48,
-         "name":"Michael Brandt",
-         "title":"GCD",
-         "homeTown":"Plano",
-         "favMovie":"A little of everything",
-         "birthday":"October 26th",
-         "favTeam":"none",
-         "superpower":"Flight",
-         "video":"../videos/1044-MichaelBrandt.mp4"
-      },
-      {  
-         "id":49,
-         "name":"West Rhodes",
-         "title":"Art Director",
-         "homeTown":"Woodsboro, Maryland",
-         "favMovie":"Snatch",
-         "birthday":"1/27",
-         "favTeam":"Cowboys",
-         "superpower":"Flight",
-         "video":"../videos/1086-WestRhodes.mp4"
       },
       {  
          "id":50,
@@ -587,17 +521,6 @@
          "video":"../videos/1093-ErinFahrer.mp4"
       },
       {  
-         "id":54,
-         "name":"Joe Slater",
-         "title":"Presentation Layer Engineer",
-         "homeTown":"Orlando, FL",
-         "favMovie":"Heavyweights",
-         "birthday":"November 25th",
-         "favTeam":"Florida State Seminoles",
-         "superpower":"Flight",
-         "video":"../videos/1113-JoeSlater.mp4"
-      },
-      {  
          "id":55,
          "name":"Annie Carroll",
          "title":"Sr. Designer",
@@ -631,17 +554,6 @@
          "video":"../videos/1068-ScottEberle.mp4"
       },
       {  
-         "id":58,
-         "name":"Erik Rahm",
-         "title":"Presentation Layer Scientist",
-         "homeTown":"Milwaukee",
-         "favMovie":"Dr. Strangelove",
-         "birthday":"August 17th",
-         "favTeam":"Seattle Mariners",
-         "superpower":"Flight",
-         "video":"../videos/1091-ErikRahm.mp4"
-      },
-      {  
          "id":59,
          "name":"Mike Rosenthal",
          "title":"Copywriter",
@@ -655,7 +567,7 @@
       {  
          "id":60,
          "name":"Henry Kean",
-         "title":"Associate Presentation Layer Engineer",
+         "title":"Presentation Layer Engineer",
          "homeTown":"Bernardsville, NJ",
          "favMovie":"Charlie Bartlett",
          "birthday":"February, 28",
@@ -666,24 +578,13 @@
       {  
          "id":61,
          "name":"Jake Ruesink",
-         "title":"Associate Presentation Layer Engineer",
+         "title":"Presentation Layer Engineer",
          "homeTown":"Austin, TX",
          "favMovie":"Little Rascals",
          "birthday":"05/17",
          "favTeam":"Fightin' Texas Aggies",
          "superpower":"Flight",
          "video":"../videos/1101-JakeRuesink.mp4"
-      },
-      {  
-         "id":62,
-         "name":"Natalie Cantu",
-         "title":"Designer",
-         "homeTown":"Omaha",
-         "favMovie":"Waking Ned Divine",
-         "birthday":"July 20",
-         "favTeam":"I love Rothko. I went to art school so I don't know about sports.",
-         "superpower":"Flight",
-         "video":"../videos/1051-NatalieCantu.mp4"
       },
       {  
          "id":63,
@@ -798,7 +699,7 @@
       {  
          "id":73,
          "name":"Jose Miranda",
-         "title":"Designer",
+         "title":"Sr. Designer",
          "homeTown":"Austin",
          "favMovie":"I Heart Huckabees",
          "birthday":"11/09",
@@ -917,17 +818,6 @@
          "video":"../videos/1112-JimmyDowell.mp4"
       },
       {  
-         "id":84,
-         "name":"Jayson L. Truttmann",
-         "title":"Sr. Director, Business Development",
-         "homeTown":"San Diego / St. Louis (Yeah, I'm like that)",
-         "favMovie":"Anything with Tom Cruise in it",
-         "birthday":"Friday the 13th. Every. Single. One.",
-         "favTeam":"St. Louis Cardinals / Florida Gators",
-         "superpower":"Invisibility",
-         "video":"../videos/1106-JaysonLTruttmann.mp4"
-      },
-      {  
          "id":85,
          "name":"Dalia Rhodes",
          "title":"Social Strategist",
@@ -948,17 +838,6 @@
          "favTeam":"Northwestern Wildcats! Go Cats!",
          "superpower":"Flight",
          "video":"../videos/1118-JoryEdmunds_alt.mp4"
-      },
-      {  
-         "id":87,
-         "name":"Melissa Nagel",
-         "title":"Associate Project Manager",
-         "homeTown":"San Antonio",
-         "favMovie":"Remember the Titans",
-         "birthday":"July 25",
-         "favTeam":"Colorado Rockies",
-         "superpower":"Flight",
-         "video":"../videos/1092-MelissaNagel.mp4"
       },
       {  
          "id":88,
@@ -992,28 +871,6 @@
          "favTeam":"San Antonio Spurs",
          "superpower":"Invisibility",
          "video":"../videos/1005-AkbarBhaidani.mp4"
-      },
-      {  
-         "id":91,
-         "name":"Martin Davis ",
-         "title":"Experience Director ",
-         "homeTown":"Waxahachie, TX",
-         "favMovie":"Fitzcarraldo",
-         "birthday":"May 31",
-         "favTeam":"Arsenal",
-         "superpower":"Flight",
-         "video":"../videos/1135-MartinDavis.mp4"
-      },
-      {  
-         "id":92,
-         "name":"Brad McRae",
-         "title":"Sr. Director of Business Development",
-         "homeTown":"Austin",
-         "favMovie":"Ladies Man",
-         "birthday":"March 20th",
-         "favTeam":"Texas Rangers",
-         "superpower":"Flight",
-         "video":"../videos/1020-BradMcRae.mp4"
       },
       {  
          "id":93,

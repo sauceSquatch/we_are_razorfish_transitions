@@ -100,25 +100,25 @@ body {
         top: 75%;
         left: 0;
         width: 500px;
-        height: 150px;
+        height: 275px;
         text-align: right;
         background-color: #5f5f5f;
         font-size: 16px; }
         body #peopleHolder .person .details h1 {
-          font-size: 5.5rem;
+          font-size: 10rem;
           margin: 0px 0px 0 0;
           text-transform: capitalize;
           color: #FFF;
           width: 2000px;
-          padding-left: 125px;
+          padding-left: 200px;
           text-align: left;
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
         body #peopleHolder .person .details h2 {
-          font-size: 2.5rem;
+          font-size: 5rem;
           margin: 10px 0px 0 0;
           color: #f5f5f5;
           text-transform: capitalize;
-          padding-left: 125px;
+          padding-left: 200px;
           text-align: left;
           width: 2000px;
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
