@@ -2,9 +2,12 @@
 bin/
 bin-debug/
 bin-release/
-/node_modules/
+node_modules/
 
 videos/
+_old/
+
+.DS_Store
 
 # Other files and folders
 *.settings/

@@ -28,7 +28,8 @@ var currentNum = 0,
     activeperson,
     activeVideo = $('.person-video', '#person1'),
     pageWidth = $(window).width(),
-    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
+    // colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
+    colors = ['#ff2e54', '#f7ff3d', '#00faff', '#e533ff', '#ooff80', '#ffffff', '#000000'],
     newColor = '',
     currentColor = '';
 
@@ -110,7 +111,7 @@ timerComplete = function() {
     person2.active = false;
     // animate the details on
     TweenLite.set($('.details', '#person2'), {backgroundColor:newColor});
-    TweenLite.to($('.details', '#person2'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
+    TweenLite.to($('.details', '#person2'), 0.55, {width:160, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person2'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
   } else {
@@ -124,7 +125,7 @@ timerComplete = function() {
     person2.active = true;
     // animate the details on
     TweenLite.set($('.details', '#person1'), {backgroundColor:newColor});
-    TweenLite.to($('.details', '#person1'), 0.55, {width:80, ease:Power4.easeOut, delay:0.75});
+    TweenLite.to($('.details', '#person1'), 0.55, {width:160, ease:Power4.easeOut, delay:0.75});
     TweenLite.to($('.details h1', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:0.95, ease:Power4.easeOut});
     TweenLite.to($('.details h2', '#person1'), 0.75, {alpha:1, marginLeft:0, delay:1.05, ease:Power4.easeOut});
   }
