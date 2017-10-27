@@ -28,7 +28,8 @@ var currentNum = 0,
     activeperson,
     activeVideo = $('.person-video', '#person1'),
     pageWidth = $(window).width(),
-    colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
+    // colors = ['#acd5d3', '#acd5c4', '#ccd5ac', '#d5acc8', '#baacd5', '#acd0d5', '#b5d5ac'],
+    colors = ['#ff2e54', '#f7ff3d', '#00faff', '#e533ff', '#ooff80', '#ffffff', '#000000'],
     newColor = '',
     currentColor = '';
 

@@ -70,8 +70,8 @@ table {
   background-repeat: no-repeat; }
 
 body {
-  font-family: "Rockwell", "Oxygen", sans-serif;
-  src: url(../fonts/rockwell.ttf);
+  font-family: "Gotham-Book", "Times new roman", sans-serif;
+  src: url(../fonts/Gotham-Book.ttf);
   background-color: #333333;
   margin: 0px; }
   body #hero_image_scroller {
@@ -107,7 +107,7 @@ body {
         body #peopleHolder .person .details h1 {
           font-size: 10rem;
           margin: 0px 0px 0 0;
-          text-transform: capitalize;
+          text-transform: uppercase;
           color: #FFF;
           width: 2000px;
           padding-left: 200px;
@@ -117,7 +117,7 @@ body {
           font-size: 5rem;
           margin: 10px 0px 0 0;
           color: #f5f5f5;
-          text-transform: capitalize;
+          text-transform: uppercase;
           padding-left: 200px;
           text-align: left;
           width: 2000px;
