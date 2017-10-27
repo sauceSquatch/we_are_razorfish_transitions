@@ -12,7 +12,11 @@
          "video":"../videos/1105-JamieNaioti.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":2,
+=======
+         "id":3,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Amanda Fonseca",
          "title":"Project Coordinator",
          "homeTown":"Houston",
@@ -111,7 +115,11 @@
          "video":"../videos/1013-AnthonySkinner.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":11,
+=======
+         "id":13,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Denise Serrano",
          "title":"Sr. Project Manager",
          "homeTown":"Austin, TX",
@@ -135,7 +143,11 @@
       {  
          "id":13,
          "name":"Jonathan Horak",
+<<<<<<< HEAD
          "title":"Senior Engineer L1",
+=======
+         "title":"Sr. Experience Engineer",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Houston, TX",
          "favMovie":"2001: A Space Oddyssey",
          "birthday":"June 28",
@@ -212,7 +224,11 @@
       {  
          "id":20,
          "name":"Anjana Patel",
+<<<<<<< HEAD
          "title":"Associate Director Project Management",
+=======
+         "title":"Program Manager",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Salinas, CA",
          "favMovie":"Weekend at Bernie's",
          "birthday":"April 15 (Tax Day!)",
@@ -245,16 +261,27 @@
       {  
          "id":23,
          "name":"David Jameson",
+<<<<<<< HEAD
          "title":"Senior Designer",
+=======
+         "title":"Sr. Designer",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Austin",
          "favMovie":"Birdman",
          "birthday":"March 26",
          "favTeam":"Notre Dame Fighting Irish",
          "superpower":"Flight",
+<<<<<<< HEAD
          "video":"../videos/1037-DavidJameson.mp4"
       },
       {  
          "id":24,
+=======
+         "video":"../videos/1037-DavidJameson_alt.mp4"
+      },
+      {  
+         "id":27,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Michelle Loeper",
          "title":"Project Manager",
          "homeTown":"St. Louis, MO",
@@ -265,6 +292,7 @@
          "video":"../videos/1046-MichelleLoeper.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":25,
          "name":"Praveen Modi",
          "title":"Sr. Technical Architect",
@@ -277,6 +305,9 @@
       },
       {  
          "id":26,
+=======
+         "id":29,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Mike Sakoonserksadee",
          "title":"Sr. Art Director",
          "homeTown":"Charlotte, NC",
@@ -298,6 +329,7 @@
          "video":"../videos/1053-NicolasNguyen.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":28,
          "name":"Michael Calfee",
          "title":"Senior Architect",
@@ -310,6 +342,9 @@
       },
       {  
          "id":29,
+=======
+         "id":32,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Ripa Patel",
          "title":"Associate Director Product Management",
          "homeTown":"Dayton",
@@ -320,7 +355,11 @@
          "video":"../videos/1062-RipaPatel.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":30,
+=======
+         "id":34,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Stefanie Roberts",
          "title":"Experience Designer",
          "homeTown":"Clearwater, FL",
@@ -366,7 +405,11 @@
       {  
          "id":34,
          "name":"Stacy Barry",
+<<<<<<< HEAD
          "title":"Associate Director Project Management",
+=======
+         "title":"Program Manager",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Salem Oregon",
          "favMovie":"The Fifth Element",
          "birthday":"May 2",
@@ -386,7 +429,11 @@
          "video":"../videos/1059-RachelBarber.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":36,
+=======
+         "id":41,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Russell Austin",
          "title":"Sr. Art Director",
          "homeTown":"Birmingham",
@@ -408,7 +455,11 @@
          "video":"../videos/1043-ErikBigelow.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":38,
+=======
+         "id":45,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Susan Lindley",
          "title":"Project Manager",
          "homeTown":"Houston",
@@ -441,7 +492,11 @@
          "video":"../videos/1133-LutherHimesIV.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":41,
+=======
+         "id":50,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Matt Rife",
          "title":"Associate Creative Director Experience",
          "homeTown":"Wabash, Indiana",
@@ -485,7 +540,11 @@
          "video":"../videos/1093-ErinFahrer.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":45,
+=======
+         "id":55,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Annie Carroll",
          "title":"Sr. Designer",
          "homeTown":"Austin, Texas",
@@ -496,7 +555,11 @@
          "video":"../videos/1012-AnnieCarroll.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":46,
+=======
+         "id":57,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Scott Eberle",
          "title":"Senior Manager Business & Customer Strategy ",
          "homeTown":"Eugene, OR",
@@ -507,7 +570,11 @@
          "video":"../videos/1068-ScottEberle.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":47,
+=======
+         "id":59,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Mike Rosenthal",
          "title":"Senior Copywriter",
          "homeTown":"Austin",
@@ -520,7 +587,11 @@
       {  
          "id":48,
          "name":"Henry Kean",
+<<<<<<< HEAD
          "title":"Engineer L1",
+=======
+         "title":"Presentation Layer Engineer",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Bernardsville, NJ",
          "favMovie":"Charlie Bartlett",
          "birthday":"February, 28",
@@ -531,7 +602,11 @@
       {  
          "id":49,
          "name":"Jake Ruesink",
+<<<<<<< HEAD
          "title":"Engineer L1",
+=======
+         "title":"Presentation Layer Engineer",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Austin, TX",
          "favMovie":"Little Rascals",
          "birthday":"05/17",
@@ -540,6 +615,7 @@
          "video":"../videos/1101-JakeRuesink.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":50,
          "name":"Natalie Cantu",
          "title":"Designer",
@@ -552,6 +628,9 @@
       },
       {  
          "id":51,
+=======
+         "id":63,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Isaac Martin",
          "title":"Senior Designer",
          "homeTown":"Indianapolis, IN",
@@ -572,8 +651,14 @@
          "superpower":"Invisibility",
          "video":"../videos/1103-JamesCurd.mp4"
       },
+<<<<<<< HEAD
       {  
          "id":53,
+=======
+   
+      {  
+         "id":66,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Jaime Sporl",
          "title":"Experience Designer",
          "homeTown":"San Diego",
@@ -652,7 +737,11 @@
       {  
          "id":60,
          "name":"Jose Miranda",
+<<<<<<< HEAD
          "title":"Senior Designer",
+=======
+         "title":"Sr. Designer",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Austin",
          "favMovie":"I Heart Huckabees",
          "birthday":"11/09",
@@ -683,7 +772,11 @@
          "video":"../videos/1069-ScottLarson.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":63,
+=======
+         "id":77,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Lucy Swithenby",
          "title":"Creative Director Experience",
          "homeTown":"Milton Keynes, UK",
@@ -729,7 +822,11 @@
       {  
          "id":67,
          "name":"Arlene Tee",
+<<<<<<< HEAD
          "title":"VP Project Management",
+=======
+         "title":"VP, Delivery Management",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Austin",
          "favMovie":"Any romantic comedy will do",
          "birthday":"Juneteenth",
@@ -760,7 +857,11 @@
          "video":"../videos/1112-JimmyDowell.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":70,
+=======
+         "id":85,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Dalia Rhodes",
          "title":"Social Content Analyst",
          "homeTown":"Philadelphia",
@@ -773,16 +874,27 @@
       {  
          "id":71,
          "name":"Jory Edmunds",
+<<<<<<< HEAD
          "title":"GVP Marketing & Consumer Strategy",
+=======
+         "title":"GVP, Account Planning",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Austin, TX",
          "favMovie":"Kill Bill",
          "birthday":"October 10th",
          "favTeam":"Northwestern Wildcats! Go Cats!",
          "superpower":"Flight",
+<<<<<<< HEAD
          "video":"../videos/1118-JoryEdmunds.mp4"
       },
       {  
          "id":72,
+=======
+         "video":"../videos/1118-JoryEdmunds_alt.mp4"
+      },
+      {  
+         "id":89,
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "name":"Troy Kooper",
          "title":"Senior Art Director",
          "homeTown":"Campbell CA",
@@ -795,7 +907,11 @@
       {  
          "id":73,
          "name":"Akbar Bhaidani",
+<<<<<<< HEAD
          "title":"Vice President, Strategy & Consulting",
+=======
+         "title":"VP, Strategy",
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "homeTown":"Seguin, TX",
          "favMovie":"Gattaca",
          "birthday":"November 12",
@@ -804,6 +920,7 @@
          "video":"../videos/1005-AkbarBhaidani.mp4"
       },
       {  
+<<<<<<< HEAD
          "id":74,
          "name":"Lauren Zugai",
          "title":"Associate Presentation Layer Engineer",
@@ -1024,6 +1141,8 @@
          "video":"../videos/126-SeraMin.mp4"
       },
       {  
+=======
+>>>>>>> b3efe3ee375bab0f6bdb8c7fd707417b594e24d7
          "id":94,
          "name":"Charity Poage",
          "title":"Senior Client Partner",
